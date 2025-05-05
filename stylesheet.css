@@ -1,0 +1,100 @@
+body{
+    display: flex;
+    background: #202733;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensure the body takes up the full viewport height */
+    margin: 0;
+    font-family: 'Monrope', sans-serif;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:#313a48;
+    max-width:500px;
+    height:332px;
+    border-radius: 15px;
+    text-align: center;
+}
+#advice-id{
+    color: #52ffa8;
+    letter-spacing:0.105rem;
+    font-family: 'Monrope', sans-serif;
+    font-size:12px;
+    margin-bottom:0;
+    position: absolute;
+    top:27%;
+
+}
+#advice-text {
+    color:white;
+    font-size:28px;
+    font-weight:600;
+    margin-right: 15px;
+    margin-left: 15px;
+    font-family: 'Manrope', sans-serif;
+
+}
+.divider{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-bottom:0;
+
+
+}
+#get-advice-btn {
+    background-color: #52ffa8;
+    height: 4rem;
+    width: 4rem;
+    border: none;
+    border-radius: 50%;
+    position: absolute;
+    top:71%;
+    bottom: -2rem;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+
+
+}
+
+#get-advice-btn:hover {
+    box-shadow: 0 0 20px #52ffa8;
+}
+
+#get-advice-btn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.loading .dice {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 540px) {
+    .main {
+        padding: 2rem 1.5rem;
+    }
+
+    #advice-text {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+}
+.dice{
+    width:24px;
+    height:24px;
+    margin:0;
+}
